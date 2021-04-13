@@ -12,12 +12,10 @@ module.exports = function(grunt) {
       'jsSrcDir': 'src/js',
       'jsTargetDir': 'assets/js',
       'jsDependencies': [
-        '<%= config.jsSrcDir %>/libs/jquery-3.4.1.min.js',
+        '<%= config.jsSrcDir %>/libs/jquery.min.js',
+        '<%= config.jsSrcDir %>/libs/elasticlunr.min.js',
         '<%= config.jsSrcDir %>/libs/jquery.fitvids.js',
-        '<%= config.jsSrcDir %>/libs/jquery.history.js',
-        '<%= config.jsSrcDir %>/libs/highlight.pack.js',
-        '<%= config.jsSrcDir %>/libs/nprogress.js',
-        'node_modules/ghosthunter/dist/jquery.ghosthunter.js'
+        '<%= config.jsSrcDir %>/libs/highlight.pack.js'
       ]
     },
     copy: {
